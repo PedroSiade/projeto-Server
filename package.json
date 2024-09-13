@@ -1,0 +1,74 @@
+{
+
+  "name": "Server",
+
+  "version": "1.0.0",
+
+  "main": "index.js",
+
+  "license": "MIT",
+
+  "scripts": {
+
+    "start": "ts-node-dev --respawn --transpile-only --exit-child src/server.ts",
+
+    "db:migrate": "npx prisma migrate dev --name user-entity --create-only && npx prisma generate",
+
+    "db:push": "npx prisma db push"
+
+  },
+
+  "compilerOptions": {
+
+    "target": "es5",
+
+    "module": "commonjs",
+
+    "lib": [
+
+      "es6",
+
+      "dom"
+
+    ]
+
+  },
+
+  "dependencies": {
+
+    "@prisma/client": "^5.19.1",
+
+    "@tanstack/react-query": "^5.56.2",
+
+    "cors": "^2.8.5",
+
+    "express": "^4.19.2",
+
+    "global": "^4.4.0",
+
+    "mysql2": "^3.11.2",
+
+    "papaparse": "^5.4.1",
+
+    "yarn": "^1.22.22"
+
+  },
+
+  "devDependencies": {
+
+    "@types/express": "^4.17.21",
+
+    "@types/node": "^22.5.4",
+
+    "prettier": "^3.3.3",
+
+    "prisma": "^5.19.1",
+
+    "ts-node-dev": "^2.0.0",
+
+    "typescript": "^5.6.2"
+
+  }
+
+}
+
