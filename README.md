@@ -15,4 +15,6 @@ npm start
 
 Explicação
 
-Na parte de importar arquivo CSV crei uma função que distribui os clientes para os operadores automaticamente, havendo assim uma distribuição justa
+No projeto, utilizei Prisma e Express para implementar todo o CRUD dos operadores e realizar a leitura dos dados dos clientes.
+
+Para a importação de arquivos CSV, criei uma função que distribui automaticamente os clientes entre os operadores, garantindo uma distribuição justa e equilibrada.
